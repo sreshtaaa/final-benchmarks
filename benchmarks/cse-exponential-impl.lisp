@@ -4,4 +4,4 @@
         (+ (fake-fib (- n 1))
            (fake-fib (- n 1)))))
 
-(fake-fib 10000)
+(print (fake-fib 10000))
