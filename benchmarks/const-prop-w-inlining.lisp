@@ -1,0 +1,10 @@
+(define (f x y z) (if (> 4 (+ x (+ y (+ z 8)))) (+ x (+ y (+ z)))))
+
+(define (g x) 
+    (if (= x 0) 
+        true 
+        (do 
+            (f 1 2 3) 
+            (g (- x 1)))))
+
+(g 100)
