@@ -1,4 +1,7 @@
-(define (f x y z) (if (> 4 (+ x (+ y (+ z 8)))) (+ x (+ y (+ z)))))
+(define (f x y z) 
+    (if (> 4 (+ x (+ y (+ z 8)))) 
+        (+ x (+ y z))
+        (- x (- y z))))
 
 (define (g x) 
     (if (= x 0) 
